@@ -1,6 +1,8 @@
 <?php
 class Person
 {
+  // Constant
+  const AUTHOR = "Mhaziqrk";
   var string $name;
   // ? == Nullable Properties
   var ?string $address;
@@ -9,8 +11,12 @@ class Person
 
   // buat function
 
-  function sayHello(string $name)
+  function sayHello(?string $name)
   {
-    echo "Hai $name" . PHP_EOL;
+    if (is_null($name)) {
+      echo "Hai, my name is $this->name" . PHP_EOL;
+    } else {
+      echo "Hello $name,my name is $this->name" . PHP_EOL;
+    }
   }
 }
