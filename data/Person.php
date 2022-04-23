@@ -1,5 +1,7 @@
-<?php 
-class Person 
+<?php
+class Person
 {
-  
+  var $name;
+  var $address;
+  var $country;
 }
