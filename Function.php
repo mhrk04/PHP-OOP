@@ -1,7 +1,7 @@
 <?php
 require_once "./data/Person.php";
 
-$person = new Person();
+$person = new Person("Haziq", null);
 $person->name = "haziqrk";
 $person->sayHello("haziq");
 $person->sayHello(null);

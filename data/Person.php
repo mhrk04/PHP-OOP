@@ -8,7 +8,12 @@ class Person
   var ?string $address;
   // default value
   var string $country = "Malaysia";
-
+  // membuat construct
+  function __construct(string $name, ?string $address)
+  {
+    $this->name = $name;
+    $this->address = $address;
+  }
   // buat function
 
   function sayHello(?string $name)
