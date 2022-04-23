@@ -5,7 +5,6 @@ $person = new Person();
 
 $person->name = "Haziq";
 $person->address = "Puchong";
-$person->country = "Malaysia";
 
 
 echo "Nama : $person->name" . PHP_EOL;
